@@ -12,12 +12,8 @@ int main () {
     int Pontos_Turisticos1 , Pontos_Turisticos2;
     float densidade1 , densidade2;
     float percapita1 , percapita2;
-
     float superpoder1 , superpoder2 ;
-    superpoder1 = (float) (Populacao1 + Area1 + Pib1 + Pontos_Turisticos1 + (1/densidade1) + percapita1);
-    superpoder2 = (float) (Populacao2 + Area2 + Pib2 + Pontos_Turisticos2 + (1/densidade2) + percapita2);
-
-
+    
     // Entrada dos Dados da Carta1
 
     printf ("Estado1:");
@@ -71,6 +67,10 @@ int main () {
 
     percapita1 = (float) Pib1 / Populacao1;
     percapita2 = (float) Pib2 / Populacao2;
+
+    //Cálculo do Super poder
+    superpoder1 = (float) (Populacao1 + Area1 + Pib1 + Pontos_Turisticos1 + (1/densidade1) + percapita1);
+    superpoder2 = (float) (Populacao2 + Area2 + Pib2 + Pontos_Turisticos2 + (1/densidade2) + percapita2);
 
 
     //Exibicao das cartas para comparacao dos dados
